@@ -6,6 +6,8 @@
   <title>Portfoliolex</title>
   <link rel="stylesheet" href="./output.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 <body class="bg-gray-900 text-white overflow-x-hidden">
   <!--navigation-->
@@ -160,9 +162,9 @@
 <hr class="border-t border-white my-8">
   <!--projets-->
   <section id="projects" class="py-20 container mx-auto px-6">
-    <h3 class="text-3xl font-bold mb-6 text-center">Projets</h3>
+    <h3  data-aos="fade-right" class="text-3xl font-bold mb-6 text-center">Projets</h3>
     <div class=" flex flex-col gap-8 md:flex-row md:flex-wrap items-center justify-center p-10 ">
-    <div class="bg-gray-800 rounded-2xl p-6 w-72 text-center transform transition duration-300 hover:scale-105">
+    <div data-aos="zoom-in" class="bg-gray-800 rounded-2xl p-6 w-72 text-center transform transition duration-300 hover:scale-105">
         <img src="/src/logo/march-banque.jpg" alt="" class="w-full max-w-full h-40 rounded-xl object-cover">
         <h3 class="text-xl font-bold mb-2 text-white">Site Banque</h3>
         <p class="text-white text-sm mb-4">
@@ -263,5 +265,20 @@
 
     burger.addEventListener('click',()=>{menu.classList.toggle('hidden');});
   </script>
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+
+
+
+
+
 </body>
 </html>
